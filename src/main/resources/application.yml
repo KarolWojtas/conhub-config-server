@@ -1,3 +1,16 @@
 spring:
   application:
     name: conhub-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/KarolWojtas/conhub-config-file-repo.git
+server:
+  port: 8888
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761
+          
